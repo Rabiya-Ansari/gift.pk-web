@@ -82,3 +82,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 8000);
   });
 });
+
+// Whatsapp Chat icon 
+const chatToggle = document.getElementById('chat-toggle');
+  const chatSidebar = document.getElementById('chat-sidebar');
+  const chatClose = document.getElementById('chat-close');
+  const chatForm = document.getElementById('chat-form');
+  const chatMessage = document.getElementById('chat-message');
+
+  chatToggle.addEventListener('click', () => {
+    chatSidebar.classList.toggle('hidden');
+  });
+
+
+  chatClose.addEventListener('click', () => {
+    chatSidebar.classList.add('hidden');
+  });
+
+  chatForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const message = chatMessage.value.trim();
+    if (message) {
+      window.open(`https://wa.me/923001234567?text=${encodeURIComponent(message)}`, '_blank');
+      chatMessage.value = '';
+    }
+  });
