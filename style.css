@@ -30,6 +30,9 @@ html {
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+body {
+    min-height: 200vh;
+  }
 
 section {
     padding: 2rem 9%;
@@ -38,6 +41,7 @@ section {
 header {
     background: var(--beige);
 }
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -66,8 +70,10 @@ header {
 }
 
 header {
-    position: fixed  ;
-    top: 18px; left: 0; right: 0;
+    position: fixed;
+    top: 18px;
+    left: 0;
+    right: 0;
     background: var(--beige);
     padding: 2rem;
     display: flex;
@@ -93,6 +99,7 @@ header .icons a {
     color: var(--darkGray);
     margin-left: 1.5rem;
 }
+
 header .icons a:hover {
     color: var(--pink);
 }
@@ -187,4 +194,3 @@ header .icons a:hover {
 .next-btn {
     right: 10px;
 }
-

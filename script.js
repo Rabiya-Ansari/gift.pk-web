@@ -6,7 +6,7 @@ toggleBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 })
 
-
+// dark/light theme local storage
 const currentTheme = localStorage.getItem("theme") || "light";
 const themeToggleBtn = document.getElementById("theme-toggle");
 

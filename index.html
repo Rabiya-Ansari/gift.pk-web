@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Online Gift Shop</title>
+    <title>🎁Gift.pk</title>
     <!--  font awesom links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -38,32 +38,35 @@
         </div>
 
         <nav id="mobile-menu"
-            class="hidden lg:flex flex-col lg:flex-row gap-4 text-sm font-medium absolute lg:static top-[100%] left-0 w-40 bg-transparent backdrop-blur-md dark:bg-gray-900 lg:bg-transparent lg:w-auto p-4 lg:p-0 shadow-lg lg:shadow-none">
+            class="hidden lg:flex flex-col lg:flex-row gap-4 text-2xl font-bold absolute lg:static top-[100%] left-0 w-40 bg-transparent backdrop-blur-md dark:bg-gray-900 lg:bg-transparent lg:w-auto p-4 lg:p-0 shadow-lg lg:shadow-none">
 
-            <a href="#home" class="block py-2 text-gray-800 dark:text-white hover:text-pink-600">Home</a>
-            <a href="#about" class="block py-2 text-gray-800 dark:text-white hover:text-pink-600">About</a>
-            <a href="#product" class="block py-2 text-gray-800 dark:text-white hover:text-pink-600">Products</a>
+            <a href="#home"
+                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600 hover:underline hover:decoration-pink-600">Home</a>
+            <a href="#about"
+                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600 hover:underline hover:decoration-pink-600">About</a>
+            <a href="#product"
+                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600 hover:underline hover:decoration-pink-600">Products</a>
             <a href="#testimonial"
-                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600">Testimonal</a>
-            <a href="#contact" class="block py-2 text-gray-800 dark:text-white hover:text-pink-600">Contact</a>
+                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600 hover:underline hover:decoration-pink-600">Testimonal</a>
+            <a href="#contact"
+                class="block py-2 text-gray-800 dark:text-white hover:text-pink-600 hover:underline hover:decoration-pink-600">Contact</a>
         </nav>
 
         <div class="flex items-center space-x-4">
             <button id="theme-toggle"
-                class="ri-moon-line text-gray-800 dark:text-white text-3xl cursor-pointer"></button>
+                class="ri-moon-line text-gray-800 dark:text-white text-3xl cursor-pointer hover:text-pink-600"></button>
 
             <a href="#" class="relative">
-                <i class="ri-heart-line text-3xl text-gray-800 dark:text-white"></i>
-                <span  class="absolute -top-2 -right-2 bg-pink-900 text-white text-[10px] rounded-full px-1">0</span>
+                <i class="ri-heart-line text-3xl text-gray-800 dark:text-white hover:text-pink-600"></i>
             </a>
 
             <a href="#" class="relative">
-                <i class="ri-shopping-cart-2-line text-3xl text-gray-800 dark:text-white"></i>
+                <i class="ri-shopping-cart-2-line text-3xl text-gray-800 dark:text-white hover:text-pink-600"></i>
                 <span id="cart-count"
                     class="absolute -top-2 -right-3 bg-pink-900 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">0</span>
             </a>
 
-            <a href="#" class="text-gray-800 dark:text-white">
+            <a href="#" class="text-gray-800 dark:text-white hover:text-pink-600">
                 <i class="ri-user-line text-3xl cursor-pointer"></i>
             </a>
         </div>
@@ -89,7 +92,7 @@
                     with real-time previews.
                 </p>
 
-                <a href="#"
+                <a href="#product"
                     class="inline-block mt-6 px-6 py-3 text-white font-medium rounded-md bg-gradient-to-r from-pink-500 to-pink-300">
                     Shop now
                 </a>
@@ -100,44 +103,48 @@
     <!-- Home Section end -->
 
     <!-- About section Start-->
-    <div class="w-full py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto dark:bg-gray-900" id="about">
+    <div class="w-full pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto dark:bg-gray-900 " id="about">
         <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-24">
 
-            <div class="relative w-full md:w-1/2 rounded-lg overflow-hidden shadow-xl">
-                <div class="aspect-w-16 aspect-h-9">
-                    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+            <div class="relative w-full md:w-1/2 rounded-lg overflow-hidden shadow-xl" data-aos="fade-right">
+                <div class="w-full aspect-square">
+                    <video class="w-full h-full object-cover rounded-lg" autoplay loop muted playsinline>
                         <source src="/image/About.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="absolute inset-0 flex items-center justify-center text-center px-4 sm:px-6 md:px-8">
+                <div class="absolute inset-0 flex items-center justify-center text-center px-4">
                     <h3
-                        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white drop-shadow-md backdrop-blur-sm bg-black/30 p-4 rounded-md pointer-events-none">
+                        class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white drop-shadow-md backdrop-blur-sm bg-black/30 p-3 rounded-md pointer-events-none">
                         Crafting Memories, Just For You
                     </h3>
                 </div>
             </div>
-
-            <div class="w-full md:w-1/2 text-center md:text-left">
-                <h3
-                    class="font-['Franklin_Gothic_Medium',_Arial_Narrow,_Arial,_sans-serif] text-3xl sm:text-4xl lg:text-5xl text-gray-800 dark:text-gray-100 font-bold leading-snug">
-                    From Our Hands to Your Heart
-                </h3>
-                <p class="mt-4 text-base sm:text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                    At <span class="font-semibold">Gift by R&S</span>, we believe the best gifts are the ones with a
-                    story. We combine quality craftsmanship with your unique ideas to create personalized gifts that are
-                    truly special. From custom engraved mugs to bespoke frames, every item is a masterpiece designed to
-                    celebrate life's moments. Our passion is helping you create cherished memories that last a lifetime.
+            <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-">
+                <h2 class=" text-3xl sm:text-4xl lg:text-5xl text-pink-600 dark:text-gray-100 font-bold leading-snug">
+                    From Our Hands <span class="text-gray-800">to Your Heart</span>
+                </h2>
+                <p class="mt-4 text-base sm:text-lg lg:text-xl text-black dark:text-gray-300 leading-relaxed">
+                    At <span class="font-semibold">Gift.pk</span>, we don’t just sell gifts — we deliver emotions
+                    wrapped with love.
+                    As your trusted online gift shop, we turn your ideas into meaningful surprises that speak from the
+                    heart.
+                    Whether it’s birthdays, anniversaries, or just because, every piece is crafted with care and
+                    delivered with love
+                    to make someone smile. We believe that a gift is not just an item — it’s a memory, a moment, and a
+                    message.
                 </p>
             </div>
+
         </div>
     </div>
-    <!-- About section end-->
+    <!-- About section End-->
+
 
     <!-- category -->
     <div class="w-full py-16 px-20" id="occasion">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden">
+            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden" data-aos="fade-up">
                 <img src="./image/category1.PNG" alt="Birthday Gifts" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20"></div>
                 <h2 class="absolute bottom-4 right-6 text-4xl font-extrabold text-white italic">
@@ -145,7 +152,7 @@
                 </h2>
             </div>
 
-            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden">
+            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden" data-aos="fade-up">
                 <img src="./image/category2.PNG" alt="Anniversary Gifts" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/20"></div>
                 <h2 class="absolute bottom-4 right-6 text-4xl font-extrabold text-white italic">
@@ -153,7 +160,7 @@
                 </h2>
             </div>
 
-            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden">
+            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden" data-aos="fade-up">
                 <img src="./image/category3.PNG" alt="Gifts for Her" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -164,7 +171,7 @@
                 </div>
             </div>
 
-            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden">
+            <div class="relative w-full h-56 md:h-64 rounded-xl overflow-hidden" data-aos="fade-up">
                 <img src="./image/category4.PNG" alt="Gifts for Him" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/40"></div>
                 <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -179,13 +186,14 @@
     <!-- category end -->
 
     <!-- combo Product -->
-    <div class="Combo-box" >
+    <div class="Combo-box">
         <h1 class="text-6xl font-bold text-center mb-10">
             <span class="text-pink-600">Gifts</span> Combo
         </h1>
         <div
             class="product-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-10 md:px-20 py-16 bg-white dark:bg-gray-900">
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <div class="relative pt-8 overflow-hidden">
                     <img src="./image/combo1.PNG" alt=""
                         class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
@@ -207,14 +215,15 @@
                 </div>
 
                 <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift Basket</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Golden Bites Basket</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        1070.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <div class="relative pt-8 overflow-hidden">
                     <img src="./image/combo2.PNG" alt=""
                         class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
@@ -236,14 +245,15 @@
                 </div>
 
                 <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift Basket</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">A day For Love Basket</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        5000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <div class="relative pt-8 overflow-hidden">
                     <img src="./image/combo3.PNG" alt=""
                         class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
@@ -265,14 +275,15 @@
                 </div>
 
                 <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift Basket</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Roses, Teddy Bear Deal</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        6074.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
 
                 <div class="relative pt-8 overflow-hidden">
                     <img src="./image/combo4.PNG" alt=""
@@ -295,9 +306,10 @@
                 </div>
 
                 <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift Basket</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Golden Forever Yours' -Gift Box
+                    </h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        10,000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
@@ -309,11 +321,12 @@
     <!-- Product -->
     <div class="Product " id="product">
         <h1 class="text-6xl font-bold text-center  mb-10">
-            <span class="text-pink-600">Our</span> products
+            <span class="text-pink-600">Featured</span> products
         </h1>
         <div
             class="product-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-10 md:px-20 py-16 bg-white dark:bg-gray-900">
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -342,12 +355,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Birthday Box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        7000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -376,12 +390,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Custom Logo Bottle</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        8000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -410,12 +425,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Key chains & FLower </h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        5700.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -444,11 +460,12 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift For Her</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        3045.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -477,12 +494,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift For him</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        6793.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -511,11 +529,12 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Eidi Box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        5040.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -544,12 +563,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Anniversary Box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        2000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -578,11 +598,12 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Anniversary basket</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        3000.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -611,12 +632,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Custom Box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        2400.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -645,11 +667,12 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Mugs & Chocolate Box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        2500.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -678,12 +701,13 @@
                 <div class="p-6 text-center">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white"> Custom Gift box</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        3500.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
 
-            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800">
+            <div class="box relative w-full shadow-lg rounded-2xl overflow-hidden group bg-white dark:bg-gray-800"
+                data-aos="fade-up">
                 <span
                     class="absolute top-4 left-4 bg-pink-100 text-pink-500 text-xl font-semibold px-3 py-1 rounded z-50">
                     10%
@@ -710,9 +734,9 @@
                 </div>
 
                 <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Gift Basket</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">Splendid Surprise</h3>
                     <div class="text-2xl text-pink-500 font-bold pt-2">
-                        599.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
+                        1199.9 <span class="line-through text-gray-500 dark:text-gray-400 text-lg">1000.99</span>
                     </div>
                 </div>
             </div>
@@ -754,66 +778,74 @@
     <!-- delivery detail end -->
 
     <!-- Testimonal  -->
-    <div class="slider section py-15" id="testimonial">
-        <div class="slider-container">
-            <div class="slider-wrapper">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-slide">
-                    <p class="testimonial-text">"The service was fantastic! The team went above and beyond to make sure
-                        I was satisfied. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <img src="./image/testimonal-1.jpg" alt="Author's Photo" class="author-img">
-                        <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </p>
-                        <div class="author-info">
-                            <h4 class="author-name">Alizy</h4>
-                            <span class="author-title">CEO at Company</span>
+    <div class="testimonial-container mt-10">
+        <h1 class="text-6xl font-bold text-center mb-10">
+            <span class="text-pink-600">Our</span> Client Says
+        </h1>
+        <div class="slider section py-15" id="testimonial">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <!--1 -->
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"The service was fantastic! The team went above and beyond to make
+                            sure
+                            I was satisfied. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="./image/testimonal-1.jpg" alt="Author's Photo" class="author-img">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="author-info">
+                                <h4 class="author-name">Alizy</h4>
+                                <span class="author-title">CEO at Company</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"I'm so impressed with the quality and attention to detail. This has
+                            made a huge difference to our workflow."</p>
+                        <div class="testimonial-author">
+                            <img src="/image/testimonal-2.jpg" alt="Author's Photo" class="author-img">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="author-info">
+                                <h4 class="author-name">Hassan</h4>
+                                <span class="author-title">Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="testimonial-slide">
+                        <p class="testimonial-text">"A unique solution that expertly supports aspiring businesses. The
+                            best
+                            decision I've ever made!"</p>
+                        <div class="testimonial-author">
+                            <img src="/image/testimonal-3.jpg" alt="Author's Photo" class="author-img">
+                            <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <div class="author-info">
+                                <h4 class="author-name">Sara</h4>
+                                <span class="author-title">Creative Lead</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="testimonial-slide">
-                    <p class="testimonial-text">"I'm so impressed with the quality and attention to detail. This has
-                        made a huge difference to our workflow."</p>
-                    <div class="testimonial-author">
-                        <img src="/image/testimonal-2.jpg" alt="Author's Photo" class="author-img">
-                        <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </p>
-                        <div class="author-info">
-                            <h4 class="author-name">Hassan</h4>
-                            <span class="author-title">Marketing Director</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="testimonial-slide">
-                    <p class="testimonial-text">"A unique solution that expertly supports aspiring businesses. The best
-                        decision I've ever made!"</p>
-                    <div class="testimonial-author">
-                        <img src="/image/testimonal-3.jpg" alt="Author's Photo" class="author-img">
-                        <p class="text-yellow-500"><i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </p>
-                        <div class="author-info">
-                            <h4 class="author-name">Sara</h4>
-                            <span class="author-title">Creative Lead</span>
-                        </div>
-                    </div>
-                </div>
+                <button id="prevBtn" class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextBtn" class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
-
-            <button id="prevBtn" class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button id="nextBtn" class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
     <!-- Testimonal End -->
+
     <!-- Contact section start -->
     <div class="contact py-16 px-3 bg-gray-50 dark:bg-gray-900 " id="contact">
         <h1 class="text-6xl font-bold text-center mb-10">
@@ -842,20 +874,20 @@
     <!-- Contact section end-->
 
     <!-- Footer start -->
-    <footer class="bg-white dark:bg-gray-900 dark:text-gray-200 p-10">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer class="bg-white dark:bg-gray-900 dark:text-gray-200 p-20">
+        <div class="w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
             <div>
                 <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Home</a>
+                    <li><a href="#Home" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Home</a>
                     </li>
-                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">About</a>
+                    <li><a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">About</a>
                     </li>
-                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Products</a>
+                    <li><a href="#product" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Products</a>
                     </li>
-                    <li><a href="#"
+                    <li><a href="#testimonial"
                             class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Testimonial</a></li>
-                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Contact</a>
+                    <li><a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -885,14 +917,14 @@
             </div>
 
             <div>
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Contact Info</h3>
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white"></i>Contact Info</h3>
                 <ul class="space-y-2">
                     <li><a href="#"
-                            class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">123-123-111</a></li>
-                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">12345678</a>
+                            class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"><i class="ri-phone-line"></i>123-123-111</a></li>
+                    <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"><i class="ri-smartphone-line"></i>+9212345678</a>
                     </li>
                     <li><a href="#"
-                            class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition">abc@gmail.com</a>
+                            class="text-gray-600 dark:text-gray-300 hover:text-pink-500 transition"><i class="ri-mail-line"></i>abc@gmail.com</a>
                     </li>
                 </ul>
 
@@ -904,22 +936,33 @@
                 </div>
             </div>
 
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Subscribe</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3">Get updates & offers</p>
+                <form class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <button type="submit"
+                        class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
 
         </div>
 
         <div class="text-center border-t border-gray-300 dark:border-gray-700 mt-10 pt-6 text-lg">
-            created by <span class="text-pink-500 font-semibold">R&S Web Designer</span> — all rights reserved
+            created by <span class="text-pink-500 font-semibold">Rabiya Ansari Web Designer</span> all rights reserved
         </div>
     </footer>
     <!-- Footer end -->
 
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Tailwind config (extend as needed)
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -930,9 +973,15 @@
             }
         };
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-out-cubic',
+            once: false,
+        });
     </script>
+
 </body>
 
 </html>
